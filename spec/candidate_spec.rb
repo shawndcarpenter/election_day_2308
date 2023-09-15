@@ -22,6 +22,4 @@ RSpec.describe Candidate do
       expect(@diana.votes).to eq(4)
     end
   end
-
-
 end
