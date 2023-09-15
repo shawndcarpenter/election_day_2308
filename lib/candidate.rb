@@ -1,9 +1,10 @@
 class Candidate
 attr_reader :name, :party, :votes
+attr_writer :candidates
 
   def initialize(data)
-    @name = data.fetch(:name)
-    @party = data.fetch(:party)
+    @name = data[:name]
+    @party = data[:party]
     @votes = 0
   end
 
